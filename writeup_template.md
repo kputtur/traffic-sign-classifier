@@ -1,8 +1,8 @@
 # **Traffic Sign Recognition** 
 
-## Writeup
+## Overview
 
-### You can use this file as a template for your writeup if you want to submit it as a markdown file, but feel free to use some other method and submit a pdf if you prefer.
+In this project, I used the deep neural network specifically convnet i.e Convolutional Neural Networks to train the given German traffic sign [dataset-link to download] (https://s3-us-west-1.amazonaws.com/udacity-selfdrivingcar/traffic-signs-data.zip). Once the model is trained evaluated using the test sets, then we download few sample traffic signs from internet and check the accuracy prediction of our model.
 
 ---
 
@@ -10,26 +10,55 @@
 
 The goals / steps of this project are the following:
 * Load the data set (see below for links to the project data set)
-* Explore, summarize and visualize the data set
+* Explore, summarize and visualize the data set using LeNet Architecture.
 * Design, train and test a model architecture
 * Use the model to make predictions on new images
 * Analyze the softmax probabilities of the new images
 * Summarize the results with a written report
 
+### Environment ####
 
-[//]: # (Image References)
+Host environment
+Ubuntu 16.04
+Anaconda 4.4.10
+Python 3.6.4
+TensorFlow 1.7.0 (GPU support)
+GPU : NVIDIA GeForce GTX 1070
 
-[image1]: ./examples/visualization.jpg "Visualization"
-[image2]: ./examples/grayscale.jpg "Grayscaling"
-[image3]: ./examples/random_noise.jpg "Random Noise"
-[image4]: ./examples/placeholder.png "Traffic Sign 1"
-[image5]: ./examples/placeholder.png "Traffic Sign 2"
-[image6]: ./examples/placeholder.png "Traffic Sign 3"
-[image7]: ./examples/placeholder.png "Traffic Sign 4"
-[image8]: ./examples/placeholder.png "Traffic Sign 5"
 
-## Rubric Points
-### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
+
+#### Data Set ####
+We already have three .p files of 32x32 resized images, which can be downloaded from here : [dataset download here](https://s3-us-west-1.amazonaws.com/udacity-selfdrivingcar/traffic-signs-data.zip)
+
+* train.p: The training set.
+* test.p: The testing set.
+* valid.p: The validation set.
+* signnames.csv: mapping of labels to training set.
+
+We will use Python pickle to load the data.
+
+The pickled data is a dictionary with 4 key/value pairs:
+
+* 'features' is a 4D array containing raw pixel data of the traffic sign images, (num examples, width, height, channels).
+* 'labels' is a 1D array containing the label/class id of the traffic sign. The file signnames.csv contains id -> name mappings for each id.
+* 'sizes' is a list containing tuples, (width, height) representing the original width and height the image.
+* 'coords' is a list containing tuples, (x1, y1, x2, y2) representing coordinates of a bounding box around the sign in the image.
+
+ Number of training examples = 34799
+ Number of validation examples = 4410
+ Nuber of testing examples =  12630
+ No of Examples= 34799 height x width= 32 X 32 channels= 3
+ Number of classes from = 43
+ 
+ Lets look at the Training Data Set
+ 
+ 
+
+### Preprocessing the Data ###
+![Training Data Set](./trafficsigns_input.jpg "Training Data Set")
+
+
+
 
 ---
 ### Writeup / README
@@ -164,8 +193,4 @@ For the first image, the model is relatively sure that this is a stop sign (prob
 
 
 For the second image ... 
-
-### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
-#### 1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
-
 
