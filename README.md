@@ -226,7 +226,7 @@ Here are the results of the prediction:
 |:---------------------:|:---------------------------------------------:| 
 |Speed Limit    		| Speed Limit 								                               	| 
 | Stop      		   	| Stop  	  								                                  	|
-| Pedestrian		   	| Road Narrows on Right					                         	|
+| Pedestrian		   	| <span style="color:red">Road Narrows on Right</span>|
 | No Entry	      	| No Entry  					 				                                |
 | Yield     			   | Yield      							                                  |
 
