@@ -194,7 +194,7 @@ An average pooling layer with 5×5 filter size and stride 1, resulting in an 3×
 • A fully connected layer with 1024 units and rectified linear activation.
 • A dropout layer with 50% ratio of dropped outputs.
 
-![Inception Model](./inception_model.png){:height="100px" width="50px"}
+![Inception Model](./inception_model.png)
 
 * Why did you believe it would be relevant to the traffic sign application?
 
@@ -208,13 +208,12 @@ Since the Traffic Sign Application requires elaborate image processing coupled w
  
  This is the indication that model is working well.
  
-<a href="https://github.com/kputtur/traffic-sign-classifier/blob/master/german_traffic_signs/001.jpg"><img src="https://github.com/kputtur/traffic-sign-classifier/blob/master/german_traffic_signs/001.jpg" align="left" height="48" width="48" ></a>
 ### Test a Model on New Images
 
 #### 1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
 
 Here are five German traffic signs that I found on the web:
-<a href="url"><img src="http://url.to/image.png" align="left" height="48" width="48" ></a>
+![5 images from web](./5_signs.jpg)
 
 
 
@@ -223,13 +222,13 @@ Here are five German traffic signs that I found on the web:
 
 Here are the results of the prediction:
 
-| Image			        |     Prediction	        					| 
+| Image			        |     Prediction	        					                        | 
 |:---------------------:|:---------------------------------------------:| 
-|Speed Limit    		| Speed Limit 									| 
-| Stop      			| Stop  	  									|
-| Pedestrian			| Road Narrows on Right							|
-| No Entry	      		| No Entry  					 				|
-| Yield     			| Yield      							|
+|Speed Limit    		| Speed Limit 								                               	| 
+| Stop      		   	| Stop  	  								                                  	|
+| Pedestrian		   	| Road Narrows on Right					                         	|
+| No Entry	      	| No Entry  					 				                                |
+| Yield     			   | Yield      							                                  |
 
 
 The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. 
