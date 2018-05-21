@@ -215,9 +215,9 @@ Since the Traffic Sign Application requires elaborate image processing coupled w
 
 Here are five German traffic signs that I found on the web:
 
-![alt text](./german_traffic_signs/002.jpg){:height="50%" width="50%"} ![alt text](./german_traffic_signs/003.jpg) {:height="50%" width="50%"}
-![alt text](./german_traffic_signs/004.jpg){:height="50%" width="50%"} ![alt text](./german_traffic_signs/005.jpg){:height="50%" width="50%"} 
-![alt text](./german_traffic_signs/001.jpg){:height="50%" width="50%"}
+![alt text](./german_traffic_signs/002.jpg){:height="50%" width="50%"}. ![alt text](./german_traffic_signs/003.jpg) {:height="50%" width="50%"}.
+![alt text](./german_traffic_signs/004.jpg){:height="50%" width="50%"}. ![alt text](./german_traffic_signs/005.jpg){:height="50%" width="50%"}. 
+![alt text](./german_traffic_signs/001.jpg){:height="50%" width="50%"}.
 
 
 
