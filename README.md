@@ -208,16 +208,13 @@ Since the Traffic Sign Application requires elaborate image processing coupled w
  
  This is the indication that model is working well.
  
-
+<a href="https://github.com/kputtur/traffic-sign-classifier/blob/master/german_traffic_signs/001.jpg"><img src="https://github.com/kputtur/traffic-sign-classifier/blob/master/german_traffic_signs/001.jpg" align="left" height="48" width="48" ></a>
 ### Test a Model on New Images
 
 #### 1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
 
 Here are five German traffic signs that I found on the web:
-
-![alt text](./german_traffic_signs/002.jpg){:height="50%" width="50%"}. ![alt text](./german_traffic_signs/003.jpg) {:height="50%" width="50%"}.
-![alt text](./german_traffic_signs/004.jpg){:height="50%" width="50%"}. ![alt text](./german_traffic_signs/005.jpg){:height="50%" width="50%"}. 
-![alt text](./german_traffic_signs/001.jpg){:height="50%" width="50%"}.
+<a href="url"><img src="http://url.to/image.png" align="left" height="48" width="48" ></a>
 
 
 
