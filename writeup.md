@@ -215,7 +215,11 @@ Since the Traffic Sign Application requires elaborate image processing coupled w
 Here are five German traffic signs that I found on the web:
 ![5 images from web](./5_signs.jpg)
 
+Most of the Neural Networks like GoogLenet, Convnet, VGNet etc are susceptible to blur and noise distortions, while being resilient
+to compression artifacts and contrast. This is an interesting result because it shows that the reduced performance under
+blur and noise is not limited to a particular model, but is common to the considered DNN architectures. 
 
+There is paper discussing about various effects of Blur, Noise, Contrast affecting the DNN, see here : https://arxiv.org/pdf/1604.04004.pdf
 
 
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
@@ -233,8 +237,13 @@ Here are the results of the prediction:
 
 The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. 
 
+From the test set it is  accuracy of 97%,  while from new images it is close to 80%.
+
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
 The code for making predictions on my final model is located in the 90th cell of the Ipython notebook.
 
 ![Top N Prediction](./top_n_prediction.jpg)
+
+I guess in this case the Pedestrian crossing appears to mistaken for Road Narrows on Right, it could be because we have high number of Road Narrows on Right has close to 241 training data set and Pedestrian has close to 211 instances, this allows little bias, we could probably improve this by having high number of Pedestrian traffic sign in the training set.
+
