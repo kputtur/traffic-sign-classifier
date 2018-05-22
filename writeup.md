@@ -246,4 +246,4 @@ The code for making predictions on my final model is located in the 90th cell of
 ![Top N Prediction](./top_n_prediction.jpg)
 
 I guess in this case the Pedestrian crossing appears to mistaken for Road Narrows on Right, it could be because we have high number of Road Narrows on Right has close to 241 training data set and Pedestrian has close to 211 instances, this allows little bias, we could probably improve this by having high number of Pedestrian traffic sign in the training set.
-
+{Updated answer}
